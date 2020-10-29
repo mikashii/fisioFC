@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.27.0"
+    "sass": "^1.27.0",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+
     <title>Fabiola Cabral - Fisioterapia</title>
 </head>
 <body>
@@ -14,7 +16,20 @@
             <h1>Fabiola Cabral</h1>
             <p>Estudante de Fisioterapia pela Universidade Paulista, cursando o 6º semestre.</p>
             <p>Fascinada pela área de Urgência e Emergência e Fisioterapia Cardiorrespiratória</p>
-        </div>
+
+    </div>
+
+    <div class="slick-presentation">
+        <img src="./assets/aps_insta.png" alt="" srcset="">
+        <img style="width: 50%;" src="./assets/dia_fisioterapeuta.png" alt="" srcset="">
+        <img style="width: 50%;" src="./assets/gasometria.png" alt="" srcset="">
+        <img style="width: 50%;" src="./assets/modos_ventilatorios.png" alt="" srcset="">
+        <img style="width: 50%;" src="./assets/padroes_resp.png" alt="" srcset="">
+    </div>
+
+            <!-- <div class="cont">
+                <button id="press">press</button>
+            </div> -->        
 
         <div class="container__contact">
             <ul>
@@ -29,5 +44,23 @@
 
 
     </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="./node_modules/slick-carousel/"></script>
+   		
+    <!-- <script src="./main.js"></script> -->
+    <script>
+     $(document).ready(function(){
+        $('.slick-presentation').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+        });
+});
+    </script>
 </body>
 </html>
